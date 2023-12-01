@@ -1,0 +1,30 @@
+{% extends 'exchanging/base.html' %}
+
+{% block title %}Conversion History{% endblock %}
+
+{% block content %}
+    <div class="container1">
+        <table>
+                <thead>
+                    <tr>
+                        <th>From money</th>
+                        <th>To money</th>
+                        <th>Amount</th>
+                        <th>Converted amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for a in currencies %}
+                    <tr>
+                            <td>{{ a.from_money}}</td>
+                            <td>{{ a.to_money}}</td>
+                            <td>{{ a.amount|floatformat:0}} {{ a.from_money }}</td>
+                            <td>{{ a.converted_amount|floatformat:0 }} {{ a.to_money }}</td>
+                            <td>{{ a.date|date:"Y-m-d H:i"}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+        </table>
+    </div>
+{% endblock %}

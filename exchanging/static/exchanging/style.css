@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  margin: 0;
+}
+.converter {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.converter .simple {
+  font-size: 20px;
+  font-weight: 600;
+}
+.converter .card {
+  width: 400px;
+  border-top: 5px solid rgb(0, 145, 255);
+  box-shadow: 0 0 10px 1px rgb(162, 162, 162);
+  border-radius: 3px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.converter .card .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.converter .card .container .exchange {
+  margin-top: 20px;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.converter .card .container .history {
+  margin-top: 20px;
+  color: rgb(0, 145, 255);
+  font-size: 0.9rem;
+}
+
+.converter .card .container .currencies {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.converter .card .container .fir {
+  margin-top: 40px;
+  width: 100%;
+}
+.converter .card .container .fir .sum {
+  display: block;
+  font-size: 0.8em;
+  color: gray;
+  font-weight: 600;
+}
+.converter .card .container .fir input {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 3px;
+}
+.converter .card .container .sec {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.converter .card .container .sec i {
+  margin-top: 20px;
+}
+.converter .card .container .sec .sec-half label {
+  display: block;
+  font-size: 0.8em;
+  color: gray;
+  font-weight: 600;
+}
+.converter .card .container .sec .sec-half select {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+.converter .card .container .convert-btn {
+  width: 100%;
+  margin-top: 25px;
+  background: rgb(0, 145, 255);
+  border: none;
+  color: white;
+  padding: 10px 0;
+  border-radius: 2px;
+  margin-bottom: 50px;
+}
+.container1{
+  display: flex;
+  padding-bottom: 30px;
+  width: 83.3%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:70px 0;
+}
+table {
+  width: 83.33%;
+  height: 75%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #3498db;
+  border-top: 5px solid  rgb(0, 145, 255);;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
